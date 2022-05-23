@@ -9,21 +9,24 @@
 
 def decorador(func):
 
-  def decorar(*args):
-    print('Inicia la ejecucion de la funcion: ', func.__name__)
-    func(*args)
-    print('Termina la ejecucion de la funcion: ', func.__name__)
+    def decorar(*args):
+        print('Inicia la ejecucion de la funcion: ', func.__name__)
+        func(*args)
+        print('Termina la ejecucion de la funcion: ', func.__name__)
 
-  return decorar
+    return decorar
+
 
 @decorador
 def hola(nombre):
-  print('Hola Mundo', nombre)
+    print('Hola Mundo', nombre)
+
 
 @decorador
-def sumar (a, b):
-  suma = a + b
-  print('La suma es:', suma)
+def sumar(a, b):
+    suma = a + b
+    print('La suma es:', suma)
+
 
 hola('Alex')
 

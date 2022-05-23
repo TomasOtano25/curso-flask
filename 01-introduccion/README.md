@@ -11,3 +11,14 @@ pip list
 
 pip install pylint autopep8
 ```
+
+## Ejecucion en flask
+
+```
+set FLASK_APP=hola.py
+
+# PowerShell
+$env:FLASK_APP = "hola.py"
+
+flask run
+```
