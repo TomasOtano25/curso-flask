@@ -18,7 +18,8 @@ pip install pylint autopep8
 set FLASK_APP=hola.py
 
 # PowerShell
-$env:FLASK_APP = "hola.py"
+$env:FLASK_APP="hola.py"
+$env:FLASK_ENV="development"
 
 flask run
 ```

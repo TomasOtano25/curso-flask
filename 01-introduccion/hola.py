@@ -3,11 +3,11 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/hola')
+@app.route('/')
 def hola():
-    return 'Hola Mundo de Flask'
+    return '<h1>Hola Mundo de Flask</h1>'
 
 
 # python .\hola.py
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
