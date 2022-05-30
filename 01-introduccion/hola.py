@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hola():
-    return render_template('index.html')
+    mensaje = 'Hola Mundo con Flask'
+    return render_template('index.html', msm=mensaje)
 
 
 # python .\hola.py
